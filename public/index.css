@@ -1,0 +1,201 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    /* background-color: rgb(240, 238, 238);  */
+    background-image: url('background_k.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+}
+
+nav {
+    background-color: #252424;
+    padding: 10px;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+
+#logoDescription {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+#logo {
+    max-width: 30px;
+    /* Smaller logo on smaller screens */
+    margin-right: 1rem;
+
+}
+
+#logo {
+    max-width: 30px;
+    /* Smaller logo on smaller screens */
+
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+nav .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+}
+
+nav .menu {
+    display: flex;
+}
+
+
+
+
+
+main {
+    flex: 1;
+    margin-top: 2rem;
+    /* padding: 20px; */
+    /* text-align: center; */
+}
+
+footer {
+    background-color: #252424;
+    padding: 10px;
+    text-align: center;
+    color: white;
+}
+
+.intro {
+    max-width: 80%;
+    margin: auto;
+    margin-bottom: 6rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    background: rgba(255, 255, 255, 0.09);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(4.1px);
+    -webkit-backdrop-filter: blur(4.1px);
+    border: 1px solid rgba(255, 255, 255, 0.58);
+    transition: background 0.3s ease, transform 0.3s ease;
+}
+
+.intro:hover {
+    transform: scale(1.05, 1.05);
+}
+
+.intro .subintro {
+    margin-top: 1rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+}
+
+
+.intro h1 {
+    margin-bottom: 20px;
+    /* font-size: 3rem; */
+}
+
+.intro p {
+    margin-bottom: 10px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+
+
+}
+
+.intro li {
+    text-align: left;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+
+
+.display {
+    width: 20rem;
+    height: 14rem;
+
+    margin: 2rem;
+}
+
+.start-chat-btn {
+    background-color: #6a01fc;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+    width: 10rem;
+    text-align: center;
+}
+
+.start-chat-btn:hover {
+    /* color: rgb(92, 0, 230); Brighten the text color */
+    box-shadow: 0px 0px 20px rgb(0, 255, 221);
+    /* Glowing border effect */
+}
+
+@media (orientation: portrait) {
+
+
+
+    nav .menu {
+        display: none;
+        flex-direction: column;
+        background-color: #000000;
+        width: 100%;
+        position: absolute;
+        top: 50px;
+        left: 0;
+        border-top: 1px solid #ffffff;
+        align-items: center;
+        box-shadow: 0 2px 10px rgb(147, 147, 147);
+    }
+
+    nav .menu a {
+        padding: 10px;
+        border-bottom: 1px solid #ffffff;
+    }
+
+    nav .menu-icon {
+        display: block;
+    }
+
+    .intro {
+        flex-direction: column;
+
+    }
+
+    .intro .subintro {
+        margin: 1rem !important;
+    }
+
+    .display {
+        width: 16rem;
+        height: 12rem;
+    
+    }
+    
+
+}

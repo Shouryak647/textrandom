@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Convert your PDF files to high-quality JPG images effortlessly with our free online PDF to JPG converter. No downloads required, no watermarks - just simple, fast, and reliable conversion of PDF pages to JPG images.">
+    <title>PDF to JPG Converter - TextRandom</title>
+    <link rel="stylesheet" href="pdf.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+    <nav>
+        <div id="logoDescription">
+            <div><img src="favicon.png" alt="logo" id="logo"></div>  
+            <div>TextRandom - Talk to Strangers</div>
+        </div>
+        <div class="menu-icon" onclick="toggleMenu()">☰</div>
+        <div class="menu">
+            <a href="/">Home</a>
+            <a href="/chat">Chat Now</a>
+            <a href="/pdf">PDF Converter</a>
+            <a href="#about_us">About Us</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+    </nav>
+    <div class="container">
+        <h1>PDF to JPEG Converter</h1>
+        <form id="uploadForm" enctype="multipart/form-data">
+            <input type="file" id="pdfFile" name="pdf" accept="application/pdf" required>
+            <div class =  "steps">
+                <h2 >Step 1: Please Select Your PDF below </h2>
+                <label for="pdfFile">Choose your document</label>
+            </div>
+            <div class="steps">
+                <h2 >Step 2: Click on the Button to Convert & Download JPG </h2>
+                <button type="submit">Convert to JPG</button>
+            </div>
+        </form>
+        <div id="result"></div>
+    </div>
+    <script src="pdf.js"></script>
+    <script>
+        function toggleMenu() {
+            const menu = document.querySelector('nav .menu');
+            if (menu.style.display === 'flex') {
+                menu.style.display = 'none';
+            } else {
+                menu.style.display = 'flex';
+            }
+        }
+    </script>
+</body>
+</html>
